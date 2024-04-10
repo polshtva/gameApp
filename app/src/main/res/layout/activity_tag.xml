@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tag"
+    android:background="#424242"
+    >
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Начать игру Запомни и Напиши код"
+            android:textColor="#8F8686"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            />
+        <Button
+            android:id="@+id/startGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Начать игру"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Перейти к следующей игре"
+            android:layout_below="@+id/startGame"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+        <Button
+            android:id="@+id/otherGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Посмотреть другие игры"
+            android:layout_below="@+id/btnNext"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/easy_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="1in"
+            android:padding="15dp"
+            android:background="@drawable/border_level"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:src="@drawable/eazy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="17dp"
+                android:text="Легкий уровень"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/medium_level"
+            android:layout_width="match_parent"
+            android:layout_below="@id/easy_level"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:padding="15dp"
+            android:background="@drawable/border_level"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:src="@drawable/medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="1dp"
+                android:text="Средний уровень"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/hard_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medium_level"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/border_level"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:src="@drawable/hard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="1dp"
+                android:text="Сложный уровень"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/game1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Запомните значение"
+            android:textColor="#8F8686"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            />
+
+
+        <TextView
+            android:id="@+id/textRemember"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRemember"
+            android:layout_marginHorizontal="50dp"
+            android:text="0:30"
+            android:gravity="center"
+            android:textColor="#4CAF50"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Начать"
+            android:layout_below="@id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editQ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вспомнте и запишите значение"
+            android:textColor="#8F8686"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ответ"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp"
+            android:textColor="#009688"
+            android:textSize="30dp"
+            android:layout_marginTop="1.5in"
+            android:background="@drawable/input"
+            />
+
+        <Button
+            android:id="@+id/checkAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Проверить"
+            android:layout_below="@id/editAnswer"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#009688"
+            />
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Перейти к следующей игре"
+            android:layout_below="@+id/checkAnswer"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+        <Button
+            android:id="@+id/otherGame2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Посмотреть другие игры"
+            android:layout_below="@+id/btnNext2"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#4CAF50"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
